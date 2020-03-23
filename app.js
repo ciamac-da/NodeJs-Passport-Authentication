@@ -3,6 +3,11 @@ const express = require("express");
 
 const app = express();
 
+//Routes
+app.use("/", require("./routes/index"));
+app.use("/", require("./routes/users"));
+
+
 //create a port to run our app on
 const PORT = process.env.PORT || 5000;
 
