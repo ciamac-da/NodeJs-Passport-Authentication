@@ -5,7 +5,7 @@ const app = express();
 
 //Routes
 app.use("/", require("./routes/index"));
-app.use("/", require("./routes/users"));
+app.use("/users", require("./routes/users"));
 
 
 //create a port to run our app on
