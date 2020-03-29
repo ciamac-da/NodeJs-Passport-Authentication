@@ -34,8 +34,7 @@ router.post('/register', (req,res) =>{
               errors,
               name,
               email,
-              password,
-              password2    
+              password,    
             })
       }else {
             res.send('pass');
