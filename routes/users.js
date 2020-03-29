@@ -69,8 +69,8 @@ router.post('/register', (req,res) =>{
                   // Save user
                   newUser.save()
                   .then(user =>{
-                       res.redirect('/login'); 
-                  })
+                       res.redirect('/users/login'); 
+                  })  
                   .catch(err => console.log(err));  
             })
             )
