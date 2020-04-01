@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-  "start": "node app.js",
-  "dev": "nodemon app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/ciamac-da/nodejs_passport_authentication#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "connect": "^3.7.0",
     "connect-flash": "^0.1.1",
     "ejs": "^3.0.1",
     "express": "^4.17.1",
