@@ -8,7 +8,6 @@ const passport = require('passport')
 // Passport config
 require('./config/passport')(passport);
 
-
 // DB Config
 const db = require('./config/keys').MongoURI;
 
