@@ -4,6 +4,11 @@ const mongoose = require("mongoose");
 const app = express();
 const flash = require('connect-flash');
 const session = require('express-session');
+const passport = require('passport')
+// Passport config
+require('./config/passport')(passport);
+
+
 // DB Config
 const db = require('./config/keys').MongoURI;
 
@@ -27,6 +32,11 @@ app.use(session({
       resave: true,
       saveUninitialized: true
     }));
+
+// Passport Middleware from passportjs.org
+app.use(passport.initialize());
+app.use(passport.session());
+ 
 
 // Connect Flash
 app.use(flash())
