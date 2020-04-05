@@ -20,48 +20,52 @@
             id="name"
             name="name"
             class="form-control"
-            placeholder="Enter Name"
+            placeholder="Tippen Sie bitte Ihren Namen ein!"
             value="<%= typeof name != 'undefined' ? name : '' %>"
           />
         </div>
         <div class="form-group">
-          <label for="email" style="color: white;">Email</label>
+          <label for="email" style="color: white;">E-Mail Adresse</label>
           <input
             type="email"
             id="email"
             name="email"
             class="form-control"
-            placeholder="Enter Email"
+            placeholder="Tragen Sie bitte Ihre E-Mail Adresse ein!"
             value="<%= typeof email != 'undefined' ? email : '' %>"
           />
         </div>
         <div class="form-group">
-          <label for="password" style="color: white;">Password</label>
+          <label for="password" style="color: white;">Passwort</label>
           <input
             type="password"
             id="password"
             name="password"
             class="form-control"
-            placeholder="Create Password"
+            placeholder="Erstellen Sie bitte ein Passwort!"
             value="<%= typeof password != 'undefined' ? password : '' %>"
           />
         </div>
         <div class="form-group">
-          <label for="password2" style="color: white;">Confirm Password</label>
+          <label for="password2" style="color: white;">Passwort Bestätigung</label>
           <input
             type="password"
             id="password2"
             name="password2"
             class="form-control"
-            placeholder="Confirm Password"
+            placeholder="Bestätigen Sie bitte Ihr Passwort!"
             value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
           />
         </div>
         <button type="submit" class="btn btn-primary btn-block">
-          Register
+          Registrieren
         </button>
       </form>
-      <p class="lead mt-4">Have An Account? <a href="/users/login">Login</a></p>
+      <p class="lead mt-4" style="color: white;">Haben Sie bereits ein Konto? 
+        <a href="/users/login" 
+        style="font-size: 24px; color: black; text-decoration: none; text-shadow: 2px 2px gray;"
+        >&nbsp;Einloggen</a>
+      </p>
     </div>
   </div>
 </div>
