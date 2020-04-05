@@ -47,7 +47,7 @@ router.post('/register', (req,res) =>{
       .then(user =>{
             if(user){
                   // User exists
-                  errors.push({ msg: 'Email is already registered!'});
+                  errors.push({ msg: 'Diese E-Mail Adresse ist schon registriert!'});
                   res.render('register', {
                         errors,
                         name,
@@ -71,7 +71,7 @@ router.post('/register', (req,res) =>{
                   // Save user
                   newUser.save()
                   .then(user =>{
-                        req.flash('success_msg', 'You are now registered and can log in!')
+                        req.flash('success_msg', 'Sie sind jetzt registriert und können sich einloggen!')
                        res.redirect('/users/login'); 
                   })  
                   .catch(err => console.log(err));  
