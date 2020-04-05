@@ -21,16 +21,16 @@ router.post('/register', (req,res) =>{
 
       // Ckeck required fields
       if(!name || !email || !password || !password2){
-            errors.push({msg: 'Please fill in all fields!'})
+            errors.push({msg: 'Füllen Sie bitte alle Felder aus!'})
       }
       //Check passwords match
       if(password !== password2){
-            errors.push({msg: 'Passwords do not match!' })
+            errors.push({msg: 'Die Passwörter stimmen nicht überein!' })
       }
 
       //Check pass length
       if(password.length < 6){
-            errors.push({msg: 'Password should be at least 6 characters!'});
+            errors.push({msg: 'Das Passwort muss zumindest 6 Charaktere haben!'});
       }
 
       if(errors.length > 0){
