@@ -95,7 +95,7 @@ passport.authenticate('local',{
 // Logout Handle
 router.get('/logout', (req, res)=>{
       req.logout();
-      req.flash('success_msg', 'You are logged out!')
+      req.flash('success_msg', 'Du bist abgemeldet!')
       res.redirect('/users/login');
 })
 
